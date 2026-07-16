@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ZeroTempo - Tempo Zero de Preparo</title>
+    <title>ZeroTempo - Tempo Zero de Preparo | iFood & 99Food</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -12,63 +12,64 @@
     <!-- Navbar -->
     <nav class="bg-white shadow-md sticky top-0 z-50">
         <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-            <div class="text-3xl font-bold text-green-700 flex items-center gap-2">
-                ⚡ ZeroTempo
+            <div class="text-3xl font-bold text-green-700">⚡ ZeroTempo</div>
+            <div class="hidden md:flex space-x-10 text-lg">
+                <a href="#" class="hover:text-green-600">Como funciona</a>
+                <a href="#" class="hover:text-green-600">Resultados</a>
+                <a href="#" class="hover:text-green-600">Compatibilidade</a>
             </div>
-            <div class="hidden md:flex space-x-8">
-                <a href="#" class="hover:text-green-600 font-medium">Como funciona</a>
-                <a href="#" class="hover:text-green-600 font-medium">Resultados</a>
-                <a href="#" class="hover:text-green-600 font-medium">Preços</a>
-            </div>
-            <a href="#" class="bg-green-600 text-white px-8 py-3 rounded-2xl font-semibold hover:bg-green-700 transition">
-                Começar Agora
+            <a href="#" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-2xl font-semibold transition">
+                Começar Grátis
             </a>
         </div>
     </nav>
 
     <!-- Hero -->
-    <header class="bg-gradient-to-br from-green-700 to-emerald-800 text-white py-24">
+    <header class="bg-gradient-to-br from-green-700 to-emerald-800 text-white py-28">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6">
-                Sua loja <span class="text-yellow-300">99.9% mais rápida</span><br>no iFood e 99Food
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Sua loja <span class="text-yellow-300">99.9% mais rápida</span>
             </h1>
-            <p class="text-2xl mb-8">A plataforma vai mostrar que você é o mais rápido da região</p>
+            <p class="text-3xl mb-8">no iFood e 99Food</p>
             
-            <div class="text-6xl font-bold mb-10">
-                0s <span class="text-3xl font-normal">de tempo de preparo</span>
+            <div class="flex justify-center gap-12 text-5xl font-bold mb-12">
+                <div>0s</div>
+                <div class="text-yellow-300">Tempo de Preparo</div>
             </div>
 
             <button onclick="simularPedido()" 
-                    class="bg-white text-green-700 font-bold text-xl px-12 py-6 rounded-3xl hover:bg-yellow-300 hover:text-green-800 transition-all">
-                Ativar Tempo Zero Agora
+                    class="bg-white text-green-700 font-bold text-2xl px-16 py-8 rounded-3xl hover:bg-yellow-300 hover:text-green-800 transition-all shadow-xl">
+                Ativar Automação Agora
             </button>
+
+            <p class="mt-10 text-green-100 text-lg">Sem instalar nada • API Oficial • Funciona 24h</p>
         </div>
     </header>
 
     <!-- Fluxo -->
     <section class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Como funciona a automação?</h2>
-            <div class="grid md:grid-cols-5 gap-6 text-center">
-                <div class="p-6">
-                    <div class="text-5xl mb-4">1️⃣</div>
-                    <p>Cliente pede no app</p>
+            <h2 class="text-4xl font-bold text-center mb-12">O fluxo automático</h2>
+            <div class="grid md:grid-cols-5 gap-8">
+                <div class="text-center">
+                    <div class="text-6xl mb-4">📱</div>
+                    <p class="font-medium">Cliente pede</p>
                 </div>
-                <div class="p-6">
-                    <div class="text-5xl mb-4">2️⃣</div>
-                    <p>Pedido chega na API</p>
+                <div class="text-center">
+                    <div class="text-6xl mb-4">🔗</div>
+                    <p class="font-medium">API recebe</p>
                 </div>
-                <div class="p-6 bg-green-50 border-2 border-green-500 rounded-3xl">
-                    <div class="text-5xl mb-4">3️⃣</div>
-                    <p class="font-bold text-green-700">Marcamos como PRONTO automaticamente</p>
+                <div class="text-center bg-green-100 border-2 border-green-600 rounded-3xl p-8">
+                    <div class="text-6xl mb-4">⚡</div>
+                    <p class="font-bold text-green-700">Marca como PRONTO automaticamente</p>
                 </div>
-                <div class="p-6">
-                    <div class="text-5xl mb-4">4️⃣</div>
-                    <p>Entregador é chamado</p>
+                <div class="text-center">
+                    <div class="text-6xl mb-4">🏍️</div>
+                    <p class="font-medium">Entregador chega</p>
                 </div>
-                <div class="p-6">
-                    <div class="text-5xl mb-4">5️⃣</div>
-                    <p>Você ganha mais pedidos</p>
+                <div class="text-center">
+                    <div class="text-6xl mb-4">🏆</div>
+                    <p class="font-medium">Você se destaca</p>
                 </div>
             </div>
         </div>
