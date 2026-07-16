@@ -7,19 +7,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-50 font-sans">
+<body class="bg-gray-50">
 
     <!-- Navbar -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold text-green-700">ZeroTempo</div>
-            <div class="space-x-8">
-                <a href="#" class="hover:text-green-600">Como funciona</a>
-                <a href="#" class="hover:text-green-600">Resultados</a>
-                <a href="#" class="hover:text-green-600">Preços</a>
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <div class="text-3xl font-bold text-green-700 flex items-center gap-2">
+                ⚡ ZeroTempo
             </div>
-            <a href="#" class="bg-green-600 text-white px-6 py-3 rounded-xl font-medium hover:bg-green-700">
-                Começar Grátis
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="hover:text-green-600 font-medium">Como funciona</a>
+                <a href="#" class="hover:text-green-600 font-medium">Resultados</a>
+                <a href="#" class="hover:text-green-600 font-medium">Preços</a>
+            </div>
+            <a href="#" class="bg-green-600 text-white px-8 py-3 rounded-2xl font-semibold hover:bg-green-700 transition">
+                Começar Agora
             </a>
         </div>
     </nav>
@@ -27,67 +29,46 @@
     <!-- Hero -->
     <header class="bg-gradient-to-br from-green-700 to-emerald-800 text-white py-24">
         <div class="max-w-6xl mx-auto px-6 text-center">
-            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
                 Sua loja <span class="text-yellow-300">99.9% mais rápida</span><br>no iFood e 99Food
             </h1>
-            <p class="text-2xl mb-4">A própria plataforma vai mostrar:</p>
-            <div class="text-6xl font-bold text-yellow-300 mb-10">0% mais rápido que as demais</div>
+            <p class="text-2xl mb-8">A plataforma vai mostrar que você é o mais rápido da região</p>
             
-            <a href="#" 
-               onclick="simularPedido()"
-               class="inline-block bg-white text-green-700 font-bold text-xl px-12 py-6 rounded-2xl hover:bg-yellow-300 hover:text-green-800 transition text-center">
+            <div class="text-6xl font-bold mb-10">
+                0s <span class="text-3xl font-normal">de tempo de preparo</span>
+            </div>
+
+            <button onclick="simularPedido()" 
+                    class="bg-white text-green-700 font-bold text-xl px-12 py-6 rounded-3xl hover:bg-yellow-300 hover:text-green-800 transition-all">
                 Ativar Tempo Zero Agora
-            </a>
-            
-            <p class="mt-6 text-green-100">Sem instalar nada • API oficial • Funciona 24h</p>
+            </button>
         </div>
     </header>
 
     <!-- Fluxo -->
     <section class="py-20 bg-white">
         <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-4xl font-bold text-center mb-12">Como funciona?</h2>
-            <div class="grid md:grid-cols-5 gap-8">
-                <div class="text-center p-6">
-                    <div class="text-5xl mb-4">📱</div>
-                    <p class="font-medium">1. Cliente faz o pedido</p>
+            <h2 class="text-4xl font-bold text-center mb-12">Como funciona a automação?</h2>
+            <div class="grid md:grid-cols-5 gap-6 text-center">
+                <div class="p-6">
+                    <div class="text-5xl mb-4">1️⃣</div>
+                    <p>Cliente pede no app</p>
                 </div>
-                <div class="text-center p-6">
-                    <div class="text-5xl mb-4">🔗</div>
-                    <p class="font-medium">2. Pedido chega na nossa API</p>
+                <div class="p-6">
+                    <div class="text-5xl mb-4">2️⃣</div>
+                    <p>Pedido chega na API</p>
                 </div>
-                <div class="text-center p-6 bg-green-50 border-2 border-green-500 rounded-3xl">
-                    <div class="text-5xl mb-4">⚡</div>
-                    <p class="font-bold text-green-700">3. Marcamos automaticamente como pronto</p>
+                <div class="p-6 bg-green-50 border-2 border-green-500 rounded-3xl">
+                    <div class="text-5xl mb-4">3️⃣</div>
+                    <p class="font-bold text-green-700">Marcamos como PRONTO automaticamente</p>
                 </div>
-                <div class="text-center p-6">
-                    <div class="text-5xl mb-4">🏍️</div>
-                    <p class="font-medium">4. Entregador chega na hora certa</p>
+                <div class="p-6">
+                    <div class="text-5xl mb-4">4️⃣</div>
+                    <p>Entregador é chamado</p>
                 </div>
-                <div class="text-center p-6">
-                    <div class="text-5xl mb-4">🚀</div>
-                    <p class="font-medium">5. Sua loja se destaca</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Resultados -->
-    <section class="py-20 bg-gray-900 text-white">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-12">Resultados que você vai ter</h2>
-            <div class="grid md:grid-cols-3 gap-10">
-                <div>
-                    <div class="text-7xl font-bold text-green-400">0s</div>
-                    <p class="text-xl mt-2">Tempo médio de preparo</p>
-                </div>
-                <div>
-                    <div class="text-7xl font-bold text-green-400">+35%</div>
-                    <p class="text-xl mt-2">Mais pedidos por hora</p>
-                </div>
-                <div>
-                    <div class="text-7xl font-bold text-green-400">0%</div>
-                    <p class="text-xl mt-2">Atrasos visíveis na plataforma</p>
+                <div class="p-6">
+                    <div class="text-5xl mb-4">5️⃣</div>
+                    <p>Você ganha mais pedidos</p>
                 </div>
             </div>
         </div>
